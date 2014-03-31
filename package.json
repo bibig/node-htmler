@@ -1,0 +1,29 @@
+{
+  "author": "Bibig <bibig@me.com> (https://twitter.com/bibig)",
+  "name": "htmler",
+  "version": "0.0.1",
+  "description": "assembling html string",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bibig/node-htmler.git"
+  },
+  "keywords": [
+    "html"
+  ],
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "assert": "*"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/bibig/node-htmler/issues"
+  },
+  "license": "BSD-2-Clause"
+}
