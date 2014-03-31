@@ -1,7 +1,7 @@
 # Htmler
 
 + an easy way to render html string.
-+ although sorts of template engines are popular. but sometimes we also need the tranditional way to render html.
++ although sorts of template engines are popular, but sometimes we also need the tranditional way to render html.
 
 ## Install
  npm install htmler

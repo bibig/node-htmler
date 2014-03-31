@@ -1,6 +1,6 @@
 var assert = require('assert');
 var should = require('should');
-var htmler = require('../libs/htmler');
+var htmler = require('../index');
 
 
 describe('[html unit test]', function () {

@@ -1,1 +1,1 @@
-exports = module.exports = require('../libs/htmler');
+exports = module.exports = require('./libs/htmler');
