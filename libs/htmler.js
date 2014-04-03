@@ -84,7 +84,7 @@ function makeProperties (properties) {
 
 function makeProperty(name, value) {
     
-    if (value === '' || value === undefined || value === null) {
+    if (value === undefined || value === null) {
         return '';
     }
     
