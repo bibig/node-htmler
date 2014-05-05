@@ -13,6 +13,7 @@
   ```javascript
     var htmler = require('htmler');
     var img = htmler.img;
+    var nav = htmler.tag('nav');
     
     
     img({src: 'http://www.example.com/xxx.png'});
@@ -24,10 +25,14 @@
   
     var ul = htmler.ul;
     var li = htmler.li;
+
     ul('myStyle').html(
       li().html('hello'),
       li('active').html('htmler')
     );
     // -> <ul class="myStyle"><li>hello</li><li class="active">htmler</li></ul>
+
+    nav('myNav').html('hello');
+    // -> <nav class="myNav">haha</nav>
   
   ```

@@ -108,7 +108,10 @@ function surround (str/*sign*/) {
     return startSign + str + endSign;
 }
 
-['html', 'head', 'body', 'style', 'title', 'div','p','span','label','h1','h2','h3', 'h4', 'h5', 'h6', 'table','caption', 'thead', 'tbody', 'th','td','tr','li','ul','ol','dl','dt','dd','center','strong','b','em','sup','sub','a', 'textarea', 'button', 'select', 'option', 'optgroup', 'form', 'fieldset', 'legend', 'address', 'section', 'script'].forEach(function (name) {
+Html.tag = tag;
+Html.singleTag = singleTag;
+
+['html', 'head', 'body', 'style', 'title', 'div','p','span','label','h1','h2','h3', 'h4', 'h5', 'h6', 'table','caption', 'thead', 'tbody', 'th','td','tr','li','ul','ol','dl','dt','dd','center','strong','b','em','sup','sub','a', 'i', 'textarea', 'button', 'select', 'option', 'optgroup', 'form', 'fieldset', 'legend', 'address', 'section', 'script'].forEach(function (name) {
     registerTag(name, true);
 });
 
