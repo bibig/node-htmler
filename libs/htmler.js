@@ -1,4 +1,4 @@
-var Html = exports = module.exports = {};
+var Html = module.exports = {};
 
 function registerTag (name, hasText) {
     if (hasText) {
@@ -17,14 +17,14 @@ function tag (name) {
             contain: contain,
             html: contain
         };
-    }
+    };
 }
 
 function singleTag (name) {
     return function (properties) {
         var props = makeProperties(convertProperties(properties));
         return makeTag(name, props, false);
-    }
+    };
 }
 
 function convertProperties (properties) {
@@ -59,8 +59,8 @@ function render () {
 
 
 
-function makeTag(name, props, html) {
-    var props = props.length > 0 ? ' ' + props.join(' ') : '';
+function makeTag(name, _props, html) {
+    var props = _props.length > 0 ? ' ' + _props.join(' ') : '';
     var beginTag = surround(name + props, '<', '>');
     var endTag;
     if (html === false) {
@@ -101,7 +101,7 @@ function surround (str/*sign*/) {
     if (arguments.length == 2) {
         startSign = endSign = arguments[1];
     } else if (arguments.length == 3) {
-        startSign = arguments[1]
+        startSign = arguments[1];
         endSign = arguments[2];
     }
     
