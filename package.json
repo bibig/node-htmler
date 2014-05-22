@@ -1,7 +1,7 @@
 {
   "author": "Bibig <bibig@me.com> (https://twitter.com/bibig)",
   "name": "htmler",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "assembling html string",
   "main": "index.js",
   "scripts": {

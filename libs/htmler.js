@@ -115,6 +115,6 @@ Html.singleTag = singleTag;
     registerTag(name, true);
 });
 
-['img', 'input', 'link', 'meta'].forEach(function (name) {
+['img', 'input', 'link', 'meta', 'br', 'hr'].forEach(function (name) {
     registerTag(name, false);
 });
